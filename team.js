@@ -1,4 +1,4 @@
-console.log("Fikewa")
+//console.log("Fikewa")
 
 function isEmpty(obj) {
     return Object.keys(obj).length === 0;
