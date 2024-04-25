@@ -38,10 +38,23 @@ const server = createServer((req, res) => {
       </body>
       </html>
     `);
+  }
+  else if(pathname === '/mary'){
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/html');
+    res.end(`<!DOCTYPE html>
+    <html>
+    <head>
+        <title>Microsoft</title>
+    </head>
+    <body>
+        <h1>Mary is our senior</h1>
+    </body>
+    </html>`);
   } else {
     res.statusCode = 404;
     res.setHeader('Content-Type', 'text/plain');
-    res.end('Not Found');
+    res.end('Steven is the boss');
   }
 });
 
