@@ -22,7 +22,7 @@ app.post('/users', (req, res) => {
   app.get('/users/:id', (req, res) => {
     const userId = req.params.id;
     // Logic to retrieve a single user by ID
-    res.send(`User with ID ${userId}`);
+    res.send(`User with ID ${userId}, Welcome ma`);
   });
   
   // Update a user
